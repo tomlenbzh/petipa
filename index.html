@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PetiPa</title>
+  <meta property="og:title" content="PetiPa.eco"/>
+  <meta property="og:type" content="PetiPa.eco"/>
+  <meta property="og:url" content="https://www.petipa.eco" />
+  <meta property="og:image" content="./assets/images/logos/Hummingbird.png" />
+  <meta property="og:description" content="PetiPa & Co est né de l’envie de partager mes connaissances, mon expérience et ma sensibilité environnementales, afin d’aider ceux qui le souhaitent à amener un peu d'écologie dans leur quotidien. Autour de la réduction des déchets, des économies d'énergies, du fait maison, du compostage, du bien manger et de la sensibilisation au bien être de notre planète et de toute la biodiversité qui la peuple.">
+  <meta name="description" content="PetiPa & Co est né de l’envie de partager mes connaissances, mon expérience et ma sensibilité environnementales, afin d’aider ceux qui le souhaitent à amener un peu d'écologie dans leur quotidien. Autour de la réduction des déchets, des économies d'énergies, du fait maison, du compostage, du bien manger et de la sensibilisation au bien être de notre planète et de toute la biodiversité qui la peuple.">
+  <meta name="keywords" content="PetiPa & Co, petipa.eco, Coralie Caminati, Environnement, Climat, Ecologie, Nature, Hommes, Terre, Biodiversité">
+  <meta name="author" content="Thomas Lenoel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/logos/Hummingbird.png">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="./css/custom-classes.css" rel="stylesheet">
+  <link href="./css/page-container.css" rel="stylesheet">
+  <link href="./css/header.css" rel="stylesheet">
+  <link href="./css/wallpaper.css" rel="stylesheet">
+  <link href="./css/section-title.css" rel="stylesheet">
+  <link href="./css/about-section.css" rel="stylesheet">
+  <link href="./css/pricing-tag.css" rel="stylesheet">
+  <link href="./css/testimony.css" rel="stylesheet">
+  <link href="./css/contact.css" rel="stylesheet">
+  <link href="./css/footer.css" rel="stylesheet">
+  <link href="./css/dropdown.css" rel="stylesheet">
+  <link href="./css/inspirations.css" rel="stylesheet">
+  <link href="./css/links.css" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCJM0XGWD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCJM0XGWD3');
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="page-container" id="top">
+
+      <!-- ++++++++++++++++++++ PETIPA HEADER ++++++++++++++++++++ -->
+
+      <header class="header">
+
+        <!-- ++++++++++++++++++++ PETIPA HEADER LARGE DEVICES ++++++++++++++++++++ -->
+
+        <div class="large-devices">
+          <div class="lg-logo-container">
+            <img class="logo-hummingbird animate__animated animate__fadeIn" src="./assets/images/logos/Hummingbird.png"
+              alt="PetiPa" onclick="navigateToTop()">
+          </div>
+          <ul class="lg-menu-list">
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToProject(false)">Le projet</button>
+            </li>
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToAboutMe(false)">Qui suis-je ?</button>
+            </li>
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToOurFees(false)">Les tarifs</button>
+            </li>
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToSources(false)">Sources / Inspirations</button>
+            </li>
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToTestimonies(false)">Témoignages</button>
+            </li>
+            <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToContactMe()">Me contacter</button>
+            </li>
+        </div>
+
+        <!-- ++++++++++++++++++++ PETIPA HEADER SMALL DEVICES ++++++++++++++++++++ -->
+
+        <div class="small-devices">
+          <div class="sm-logo-container">
+            <img class="logo-hummingbird animate__animated animate__fadeIn" src="./assets/images/logos/Hummingbird.png"
+              alt="PetiPa" onclick="navigateToTop()">
+            <button class="menu-button mr-10 animate__animated animate__fadeIn">
+              <span class="material-icons" onclick="toggleMenu()">menu</span>
+            </button>
+          </div>
+        </div>
+
+      </header>
+
+      <!-- ++++++++++++++++++++ HEADER DROPDOWN MENU CONTENT ++++++++++++++++++++ -->
+
+      <div class="dropdown-container" id="dropdown-container">
+        <div class="sm-dropdown-menu" href="#">
+          <div class="dropdown-item" onclick="navigateToProject(true)">Le projet</div>
+          <div class="dropdown-item" onclick="navigateToAboutMe(true)">Qui suis-je ?</div>
+          <div class="dropdown-item" onclick="navigateToOurFees(true)">Les tarifs</div>
+          <div class="dropdown-item" onclick="navigateToSources(true)">Sources / Inspirations</div>
+          <div class="dropdown-item" onclick="navigateToTestimonies(true)">Témoignages</div>
+          <div class="dropdown-item" onclick="navigateToContactMe(true)">Me contacter</div>
+        </div>
+      </div>
+
+      <!-- <nav class="bootstrap-iso navbar navbar-default navbar-absolute"></nav> -->
+
+      <!-- ++++++++++++++++++++ PETIPA WALLPAPER ++++++++++++++++++++ -->
+
+      <div class="wallpaper">
+        <img class="wallpaper-logo animate__animated animate__slideInLeft" src="./assets/images/logos/Logo.png"
+          alt="PetiPa">
+        <div class="title">
+          <img class="wallpaper-logo-title animate__animated animate__fadeIn animate__delay-1s"
+            src="./assets/images/logos/TitleWhite.png" alt="PetiPa">
+        </div>
+      </div>
+
+      <!-- ++++++++++++++++++++ PETIPA SECTIONS ++++++++++++++++++++ -->
+
+      <div class="card-container pt-50">
+
+        <!-- ++++++++++++++++++++ PETIPA PROJECT SECTION ++++++++++++++++++++ -->
+
+        <section id="project" class="site-section txt-j">
+          <h2 class="section-title">Le projet</h2>
+          <div class="section-content">
+
+            <p><strong>PetiPa & Co</strong> est né de l’envie de partager mes connaissances, mon expérience et ma sensibilité 
+              environnementales, afin d’aider ceux qui le souhaitent à amener un peu d'écologie dans leur quotidien. 
+              Apporter des réflexions et mener des actions autour de la réduction des déchets, des économies d'énergies, 
+              du fait maison, du compostage, du bien manger et de la sensibilisation au bien être de notre planète et de 
+              toute la biodiversité qui la peuple.</p>
+
+            <p>Je propose un conseil personnalisé et adapté.</p>
+            <p>Cet accompagnement se déroule en 3 étapes :</strong></p>
+
+            <ul>
+              <li class="mb-20">Un premier rendez-vous à votre domicile<strong>*</strong> me permet une évaluation de vos 
+                conditions de départ. Il me tient à cœur de prendre en compte vos motivations et vos freins avec 
+                bienveillance et respect du chemin de chacun.</li>
+              <li class="mb-20">A la suite de ce rendez-vous, et seulement si le projet vous convient, je vous enverrai 
+                une petite action hebdomadaire à mettre en place, sur une durée de 3 mois au cours de laquelle je reste 
+                à votre écoute pour répondre à vos questions et doutes éventuels.</li>
+              <li>Un rendez-vous final permettra de dresser le bilan des évolutions réalisées et de l'action menée.</li>
+            </ul>
+
+            <p>La durée de cet accompagnement n’a pas été décidée au hasard. Elle résulte d’une année de réflexion et 
+              plusieurs accompagnements tests auprès de familles volontaires. Cette durée s'avère suffisante pour ancrer 
+              de nouvelles habitudes et une nouvelle manière de penser sa vie de tous les jours.</p>
+
+            <p><strong>* Tant que les conditions sanitaires ne sont pas optimales et pour celles et ceux qui le souhaitent, 
+              je propose un rendez-vous en visio (sur Zoom ou Skype). Pour les rendez-vous en présentiels, le port du masque 
+              et le respect des gestes barrières sont appliqués.</strong></p>
+
+          </div>
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA PROJECT SECTION ++++++++++++++++++++ -->
+
+        <section id="aboutMe" class="site-section-lg txt-j">
+          <div class="about-section">
+
+            <h2 class="section-title mt-20">Qui suis-je ?</h2>
+            <div class="section-content">
+              <div class="about-content">
+
+                <div class="about-txt">
+                  <p>J’ai toujours été proche de la nature, respectueuse du vivant sous toutes ses formes (je fais une
+                    exception pour les moustiques je le confesse), sensible au bien manger et au bien-être. Mais mon
+                    parcours professionnel m’a mené vers des horizons beaucoup moins raccords avec mes valeurs profondes.
+                    Jusqu’au jour où ces deux vies sont entrées en collision !</p>
+  
+                  <p><strong>Il y a parfois des déclics qui changent une vie.</strong></p>
+  
+                  <p>Année <strong>2013</strong>, ma rencontre avec la permaculture et sa philosophie: prendre soin de
+                    soi, des Hommes, de la terre et partager équitablement les ressources. Un peu plus tard, le visionnage
+                    du film documentaire <strong>Demain</strong> (de Cyril Dion et Mélanie Laurent). Si j’étais déjà
+                    sensible au changement climatique, j’ai compris à ce moment là que ces valeurs, non seulement
+                    essentielles au bien-être humain, devenaient indissociables de toute forme de (sur)vie sur Terre et
+                    qu’on pouvait toutes et tous agir à notre niveau. Il est devenu urgent pour moi
+                    de passer à l'action et de trouver le moyen de partager cette prise de conscience.</p>
+  
+                  <p>Voilà comment après quelques années de voyages, de la sidération, des rencontres marquantes, de la
+                    colère, de l’espoir, des doutes, des lectures, des conférences, des ateliers, des formations, une
+                    transition professionnelle, un changement de vie… beaucoup d’encouragement et de bons conseils, est
+                    né <strong>PetiPa & Co.</strong></p>
+                </div>
+  
+                <div class="about-img"></div>
+                <div class="about-img-sm-container">
+                  <img src="./assets/images/profile/coralie.jpg" alt="Coralie Carminati" class="about-img-sm">
+                </div>
+  
+              </div>
+
+              <div class="formations-content mt-50">
+                <p class="sm-txt txt-l mb-20"><strong class="italic-title">Formations</strong></p>
+                <div class="mb-20">
+                  Diplômée d’une <strong>Licence en Management et Ingénierie du tourisme</strong>, j’ai travaillé plus de 10 
+                  ans en tant que coordinatrice d’évènement dans le tourisme d’affaires.</div>
+                <div class="mb-20"><strong>Certification de Permaculture</strong> en 2018 (MOOC – université en ligne).</div>
+                <div class="mb-20"><strong>Certification Zéro Déchet</strong> en 2019 (MOOC – université en ligne).</div>
+                <div class="mb-20"><strong>Formation et certification de guide composteur</strong> en 2018 et 2019 
+                  (Bordeaux métropole et association Au Ras du Sol).</div>
+                <div class="mb-20"><strong>Participation à la fresque du climat</strong> en 2020. (Créée et diffusée
+                  depuis fin 2017 sur la base des rapports du GIEC, atelier ludique pour sensibiliser au changement
+                  climatique basé sur l’intelligence collective)</div>
+                <div class="md-20"><strong>Plusieurs séjours interculturels</strong> (majoritairement en woofing)
+                  <strong>dans des éco-lieux</strong> (Allemagne et France de 2015 à 2019) sur l’alimentation et le
+                  développement durable, la vie en communauté, la sobriété (comment vivre mieux avec moins).</div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA PROJECT SECTION ++++++++++++++++++++ -->
+
+        <section id="ourFees" class="site-section txt-j">
+          <h2 class="section-title mt-50">Les tarifs</h2>
+          <div class="section-content">
+            <p class="prices"><strong>Premier RDV (2 à 3h)</strong> à domicile = 45€<strong>*</strong></p>
+            <p class="prices"><strong>Accompagnement sur 3 mois</strong> = 80€ par mois</p>
+            <p class="prices"><strong>Bilan final (1h)</strong> = inclus</p>
+            <p class="prices">Si vous avez envie d’offrir le premier RDV à des proches, je peux vous envoyer un «
+              bon cadeau ». Sachez qu’il n’y a aucune obligation de poursuivre si le premier RDV n’est pas concluant et
+              que les personnes ne sont pas prêtes à aller plus loin dans la démarche. Mais la graine sera plantée et
+              c'est déjà beaucoup.</p>
+              <p class="prices txt-l mt-50 mb-20"><strong class="italic-title">En plus de l’accompagnement</strong></p>
+            </div>
+
+          <div class="row">
+
+            <!-- ++++++++++++++++++++ PETIPA BASIC PRICE TAG ++++++++++++++++++++ -->
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 offset-lg-2">
+              <div class="price-tag">
+                <div class="price-tag-title">Atelier compostage</div>
+                <div class="price-tag-figures">
+                  <h1 class="price-tag-amount">45<span class="price-tag-currency">€</span></h1>
+                </div>
+                <div class="price-tag-details sm-txt txt-j">Installation, mise en place, explications et suivi à la mise 
+                  en route d’un composteur que vous soyez en appartement, seul ou à deux (lombri-composteur) ou que vous 
+                  ayez un jardin et viviez à 3 ou plus (composteur extérieur)</div>
+              </div>
+            </div>
+
+            <!-- ++++++++++++++++++++ PETIPA MEDIUM PRICE TAG ++++++++++++++++++++ -->
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="price-tag">
+                <div class="price-tag-title">Atelier cosmétique maison**</div>
+                <div class="price-tag-figures">
+                  <h1 class="price-tag-amount">45<span class="price-tag-currency">€</span></h1>
+                </div>
+                <div class="price-tag-details sm-txt txt-j">Fabrication d’un produit naturel chez vous avec des recettes 
+                  simples et faciles à réaliser, au choix (déodorant, savon (non saponifié à froid), baume à lèvre ou 
+                  bougie de massage)
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mt-30"><strong>* </strong>Prix de lancement pour tout premier RDV pris <strong>avant le 30 
+            Juin 2021</strong>.</p>
+          <p><strong>** </strong>L’atelier inclus la matière première et le matériel pour réaliser <strong>
+            au choix 2 déodorants ou 8 savons ou 2 baumes à lèvres ou 2 bougies</strong>.</p>
+
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA SOURCES SECTION ++++++++++++++++++++ -->
+
+        <section id="sources" class="site-section txt-j">
+          <h2 class="section-title mt-50">Sources / Inspirations<strong class="pink">*</strong></h2>
+
+          <div class="inspiration-item sm-txt txt-c">
+            "Montrer l’exemple n’est pas le meilleur moyen de convaincre, c’est le seul"
+            <div class="inspiration-author pt-20">
+              <span class="inspiration-dash"> - </span>Ghandi
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="inspiration-item sm-txt txt-c">
+            "Quand le dernier arbre aura été abattu, quand la dernière rivière aura été empoisonnée,
+            quand le dernier poisson aura été péché, alors enfin nous saurons que l'argent ne se mange pas"
+            <div class="inspiration-author pt-20">
+              <span class="inspiration-dash"> - </span>Proverbe Indien
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="inspiration-item sm-txt txt-c">
+            <div>
+              Un Maître Zen vit un scorpion se noyer et décida de le tirer de l’eau.
+              <br>
+              Lorsqu’il le fit, le scorpion le piqua. Par l’effet de la douleur, le Maître lâcha l’animal, 
+              qui de nouveau tomba à l’eau. Le Maître tenta de le tirer à nouveau et l’animal le piqua encore.
+              <br><br>
+              Un jeune disciple qui était en train d’observer se rapprocha du Maître et lui dit : 
+              <strong>"Excusez-moi Maître, mais pourquoi insistez-vous ? Ne comprenez vous pas qu’à chaque fois que vous 
+                tenterez de letirer de l’eau il va vous piquer ?"</strong>
+              <br><br>
+              Le Maître répondit:
+              <strong> "La nature du scorpion est de piquer et cela ne va pas changer la mienne qui est d’aider."</strong> 
+              Alors, le Maître réfléchît et à l’aide d’une feuille, il tira le scorpion de l’eau et lui sauvant ainsi la vie.
+              <br><br>
+              Puis, s’adressant à son jeune disciple, il continua :
+              <br>
+              <strong>"Ne change pas ta nature si quelqu’un te fait mal, prends juste des précautions. Car les Hommes
+                sont souvent ingrats des bienfaits que tu leur apporteras. Ce n’est pas une raison pour arrêter de faire
+                le bien, d’abandonner l’amour qui vit en toi. Les uns poursuivent le bonheur, les autres le créent.
+                <br><br>
+                Préoccupe-toi plus de ta conscience que de ta réputation. Parce que ta conscience est ce que tu es, et
+                ta réputation c’est ce que les autres pensent de toi. Quand la vie te présente mille raisons de pleurer,
+                montre-lui que tu as mille raisons de sourire.
+              </strong>"
+            </div>
+
+            <div class="inspiration-author pt-20">
+              <span class="inspiration-dash"> - </span>Enseignement Tibétain
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="inspiration-item sm-txt">
+            Tous mes défis et ateliers sont appuyés par des institutions et associations telles que :
+            <strong>ADEME</strong> (Agence de l’environnement et de la maîtrise de l’énergie), <strong>WWF</strong>
+            (World Wild Foundation), <strong>Université des Colibris</strong> (MOOC) et l’association <strong>Au Ras
+              du Sol</strong>.
+          </div>
+
+          <div class="link-container mt-20 sm-txt">
+
+            <div class="link-item">
+              <p class="link-item-label"><strong>ADEME :</strong></p>
+              <p class="link-item-content">
+                <a href="http://www.ademe.fr" target="_blank">www.ademe.fr</a>
+              </p>
+            </div>
+
+            <div class="link-item">
+              <p class="link-item-label"><strong>FRESQUE DU CLIMAT :</strong></p>
+              <p class="link-item-content">
+                <a href="http://www.fresqueduclimat.org" target="_blank">www.fresqueduclimat.org</a>
+              </p>
+            </div>
+
+            <div class="link-item">
+              <p class="link-item-label"><strong>WWF :</strong></p>
+              <p class="link-item-content">
+                <a href="http://www.wwf.fr" target="_blank">www.wwf.fr</a>
+              </p>
+            </div>
+
+            <div class="link-item">
+              <p class="link-item-label"><strong>MOOC :</strong></p>
+              <p class="link-item-content">
+                <a href="http://www.colibris-universite.org" target="_blank">www.colibris-universite.org</a>
+              </p>
+            </div>
+
+            <div class="link-item">
+              <p class="link-item-label"><strong>Au ras du sol :</strong></p>
+              <p class="link-item-content">
+                <a href="http://www.aurasdusol.org" target="_blank">www.aurasdusol.org</a>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="inspiration-item mt-20 sm-txt">
+            <span class="pink">*</span>Liste non exhaustive
+          </div>
+
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA TESTIMONIES SECTION ++++++++++++++++++++ -->
+
+        <section id="testimonies" class="site-section txt-j">
+          <h2 class="section-title mt-50">Témoignages</h2>
+          <div class="section-content">
+
+            <!-- ++++++++++++++++++++ PETIPA TESTIMONY ++++++++++++++++++++ -->
+
+            <div class="testimony-card mb-30">
+              <div class="testimony">
+                <div class="quote">
+                  <span class="material-icons">format_quote</span>
+                </div>
+
+                <h5><strong>Une métamorphose saine !</strong></h5>
+                <p class="mt-30">Comme aime le dire Coralie, "il y a parfois des déclics qui changent une vie". 
+                  Ça a été le cas pour nous !</p>
+                <p>Plus qu'un simple programme de transition écologique, l'expérience de <strong>Petipa&Co</strong> nous 
+                  a fait réaliser  à quel point on pouvait changer le quotidien de notre famille, par de petites actions 
+                  et habitudes  simples à mettre en œuvre. Quand les conseils de Coralie sont venus s'ajouter à notre 
+                  volonté initiale d'être plus responsables, c'est toute notre vie qui s'est littéralement améliorée 
+                  (de notre consommation à nos déplacements en passant par nos réflexions...) et celle de notre 
+                  entourage avec !</p>
+                <p>Merci à toi Coralie pour cette expertise essentielle dans notre monde actuel.</p>
+
+                <div class="profile">
+                  <div class="profile-information">
+                    <p class="name"><span class="text-capitalize">Famille</span> MICHEL</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA CONTACT SECTION ++++++++++++++++++++ -->
+
+        <section id="contactMe" class="site-section txt-j pb-50">
+          <h2 class="section-title mt-50">Me contacter</h2>
+          <div class="contact-item mb-10">
+            <span class="material-icons contact-item-icon">eco</span>
+            <p class="sm-txt no-margin no-padding">Coralie Carminati</p>
+          </div>
+
+          <div class="contact-item mb-10">
+            <span class="material-icons contact-item-icon">location_on</span>
+            <p class="sm-txt no-margin no-padding">Bordeaux Métropole</p>
+          </div>
+
+          <div class="contact-item mb-10">
+            <span class="material-icons contact-item-icon">phone</span>
+            <p class="sm-txt no-margin no-padding">+33 6 98 89 48 77</p>
+          </div>
+
+          <div class="contact-item mb-10">
+            <span class="material-icons contact-item-icon">email</span>
+            <a class="sm-txt no-margin no-padding" href="mailto:petipa.eco@gmail.com">petipa.eco@gmail.com</a>
+          </div>
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA FOOTER ++++++++++++++++++++ -->
+
+        <div class="footer">
+          <div class="footer-logo-container">
+            <img class="footer-logo" src="./assets/images/logos/LargeLogo.png" alt="PetiPa">
+            <img class="footer-title" src="./assets/images/logos/TitleWhite.png" alt="PetiPa">
+          </div>
+          <div class="copyrights-container">
+            <p class="sm-txt copyrights">PETIPA & CO© 2020 - ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/petipa.js"></script>
+  <script src="./libraries/zenscroll/zenscroll-min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

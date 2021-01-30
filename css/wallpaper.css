@@ -1,0 +1,103 @@
+.wallpaper {
+  position: relative;
+  height: 350px;
+  max-width: 100%;
+  background: url(../assets/images/logos/kraft.png);
+  overflow: hidden;
+  -webkit-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.wallpaper-logo {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  -webkit-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  -webkit-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.wallpaper-logo-title {
+  height: 180px;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+@media only screen and (max-width: 991px) {
+  .wallpaper {
+    height: 345px;
+  }
+
+  .wallpaper-logo {
+    height: 250px;
+  }
+
+  .wallpaper-logo-title {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wallpaper {
+    height: 300px;
+  }
+
+  .wallpaper-logo {
+    height: 200px;
+  }
+
+  .wallpaper-logo-title {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wallpaper {
+    height: 180px;
+  }
+
+  .wallpaper-logo {
+    height: 150px;
+  }
+
+  .wallpaper-logo-title {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .title {
+    align-items: flex-end;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .wallpaper-logo-title {
+    height: 80px;
+  }
+}

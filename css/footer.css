@@ -1,0 +1,83 @@
+.footer {
+  position: relative;
+  padding: 50px 0;
+  background: linear-gradient(140deg, #edf9ed 0%, #bce3bb 39%, #a4cda3 71%);
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 100px;
+}
+
+.footer-title {
+  height: 60px;
+}
+
+.copyrights-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyrights {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* *************************************************************** */
+
+.scroll-up {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
+}
+
+.scroll-btn {
+  background: #d396b2;
+  color: white;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .scroll-up {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .scroll-up {
+    top: 20px;
+    right: 20px;
+  }
+}

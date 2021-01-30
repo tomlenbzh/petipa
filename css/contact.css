@@ -1,0 +1,24 @@
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-item-icon {
+  margin-right: 25px;
+  color: #a4cda3;
+}
+
+.contact-item-txt {
+  font-size: large;
+  font-weight: 500;
+  color: #3b3c3a;
+  margin: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-item-txt {
+    font-size: small;
+  }
+}

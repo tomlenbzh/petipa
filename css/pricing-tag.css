@@ -1,0 +1,59 @@
+.price-tag {
+  text-align: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.price-tag-title {
+  padding: 10px;
+  background-color: #6f956e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-tag-figures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 130px;
+  color: #4e694d;
+  background: linear-gradient(140deg, #edf9ed 0%, #bce3bb 39%, #a4cda3 71%);
+}
+
+.price-tag-amount {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.price-tag-period {
+  margin: 0;
+  font-size: large;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.price-tag-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 500;
+  font-size: small;
+  color: #3b3c3a;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.description {
+  font-weight: 500;
+  font-size: small;
+  color: #3b3c3a;
+  font-family: "Montserrat", sans-serif !important;
+}

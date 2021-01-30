@@ -1,0 +1,14 @@
+.link-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-item-label {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .link-item-label {
+    display: none;
+  }
+}

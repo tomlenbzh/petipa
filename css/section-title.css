@@ -1,0 +1,21 @@
+.section-title {
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  border-left: 3px solid #cf7aa0;
+  color: #3b3c3a;
+}
+
+.section-content {
+  color: #3b3c3a;
+}
+
+.pink {
+   color:#cf7aa0;
+}
+
+@media only screen and (max-width: 400px) {
+  .section-title {
+    font-size: 25px;
+  }
+}

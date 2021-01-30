@@ -1,0 +1,18 @@
+.separator {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 30px auto;
+  background: linear-gradient(140deg, #edf9ed 0%, #bce3bb 39%, #a4cda3 71%);
+}
+
+.inspiration-dash {
+  color: #3b3c3a;
+  font-weight: normal;
+}
+
+.inspiration-author {
+  color: #cf7aa0;
+  font-style: italic;
+  font-weight: 700;
+}

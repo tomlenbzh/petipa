@@ -1,0 +1,64 @@
+.about-section {
+  padding: 0 50px;
+  transition: all ease-in-out 0.5s;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  transition: all ease-in-out 0.5s;
+}
+
+.about-txt {
+  width: 70%;
+}
+
+.about-img {
+  background: url(../assets/images/profile/coralie.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  width: 30%;
+  transition: all ease-in-out 0.5s;
+}
+
+.about-img-sm-container {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-txt {
+    width: 100%;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-img-sm-container {
+    display: block;
+    width: 100%;
+    height: 250px;
+  }
+
+  .about-img-sm {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-section {
+    margin: 0 15px;
+    padding: 0;
+    transition: all ease-in-out 0.5s;
+  }
+}
