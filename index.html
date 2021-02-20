@@ -74,6 +74,9 @@
               <button class="lg-item-btn" onclick="navigateToSources(false)">Sources / Inspirations</button>
             </li>
             <li class="lg-menu-list-item">
+              <button class="lg-item-btn" onclick="navigateToPending(false)">En attendant</button>
+            </li>
+            <li class="lg-menu-list-item">
               <button class="lg-item-btn" onclick="navigateToTestimonies(false)">Témoignages</button>
             </li>
             <li class="lg-menu-list-item">
@@ -103,12 +106,11 @@
           <div class="dropdown-item" onclick="navigateToAboutMe(true)">Qui suis-je ?</div>
           <div class="dropdown-item" onclick="navigateToOurFees(true)">Les tarifs</div>
           <div class="dropdown-item" onclick="navigateToSources(true)">Sources / Inspirations</div>
+          <div class="dropdown-item" onclick="navigateToPending(true)">En attendant</div>
           <div class="dropdown-item" onclick="navigateToTestimonies(true)">Témoignages</div>
           <div class="dropdown-item" onclick="navigateToContactMe(true)">Me contacter</div>
         </div>
       </div>
-
-      <!-- <nav class="bootstrap-iso navbar navbar-default navbar-absolute"></nav> -->
 
       <!-- ++++++++++++++++++++ PETIPA WALLPAPER ++++++++++++++++++++ -->
 
@@ -387,6 +389,33 @@
 
         <!-- ++++++++++++++++++++ PETIPA TESTIMONIES SECTION ++++++++++++++++++++ -->
 
+        <section id="pending" class="site-section txt-j">
+          <h2 class="section-title mt-50">En attendant</h2>
+          <div class="section-content">
+          
+            <p>Je vous propose quelques outils intéressants, testés et approuvés, qui vous aideront à mieux comprendre et à motiver vos actions.</p>
+            <p><strong class="italic-title">Vous vous demandez quel est votre impact carbone ?</strong></p>
+            <p>Ce simulateur pourra vous donner une petite idée en vous aidant à calculer votre bilan carbone.</p>
+            
+            <script id="ecolab-climat" src="https://nosgestesclimat.fr/iframe.js"></script>
+
+            <p class="mt-50">
+              Et si la notion de CO² est pour vous aussi un peu floue, ce super convertisseur vous permettra d’y 
+              voir plus clair.<br><a href="https://monconvertisseurco2.fr/" target="_blank">https://monconvertisseurco2.fr/</a></p>
+
+              <p><strong class="italic-title">Vous vous demandez si les fruits et légumes que vous mangez sont vraiment de saison ?</strong></p>
+              <p>
+                Ce calculateur est fait pour vous:
+                <a href="https://mesfruitsetlegumesdesaison.fr/" target="_blank">https://mesfruitsetlegumesdesaison.fr/</a>
+              </p>
+
+              <p class="mt-50">Vous retrouverez ces outils sur le site de l’ADEME.</p>
+              <p>Si vous avez des questions et des doutes qui en découlent, n’hésitez pas à me contacter, j’y répondrai avec plaisir</p>
+  
+          </div>
+        </section>
+        <!-- ++++++++++++++++++++ PETIPA TESTIMONIES SECTION ++++++++++++++++++++ -->
+
         <section id="testimonies" class="site-section txt-j">
           <h2 class="section-title mt-50">Témoignages</h2>
           <div class="section-content">
@@ -472,26 +501,48 @@
         <!-- ++++++++++++++++++++ PETIPA CONTACT SECTION ++++++++++++++++++++ -->
 
         <section id="contactMe" class="site-section txt-j pb-50">
+
           <h2 class="section-title mt-50">Me contacter</h2>
-          <div class="contact-item mb-10">
-            <span class="material-icons contact-item-icon">eco</span>
-            <p class="sm-txt no-margin no-padding">Coralie Carminati</p>
+
+          <div class="contact-content d-flex flex-column flex-md-row justify-content-md-between">
+
+            <div class="contact-info d-flex flex-column">
+            
+              <div class="contact-item mb-10">
+                <span class="material-icons contact-item-icon">eco</span>
+                <p class="sm-txt no-margin no-padding">Coralie Carminati</p>
+              </div>
+    
+              <div class="contact-item mb-10">
+                <span class="material-icons contact-item-icon">location_on</span>
+                <p class="sm-txt no-margin no-padding">Bordeaux Métropole</p>
+              </div>
+    
+              <div class="contact-item mb-10">
+                <span class="material-icons contact-item-icon">phone</span>
+                <p class="sm-txt no-margin no-padding">+33 6 98 89 48 77</p>
+              </div>
+    
+              <div class="contact-item mb-10">
+                <span class="material-icons contact-item-icon">email</span>
+                <a class="sm-txt no-margin no-padding" href="mailto:petipa.eco@gmail.com">petipa.eco@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="social-network-info d-flex flex-column">
+              <div class="social-network-card">
+                <p class="card-title">
+                  <span>Ne me cherchez pas, vous ne me trouverez pas</span>
+                  <img src="./assets/images/logos/emoji.png" class="emoji" alt="Ne me cherchez pas, vous ne me trouverez pas">
+                </p>
+                <p class="card-content">
+                  J'ai fait le choix de ne pas communiquer sur les réseaux sociaux pour rester fidèle 
+                  à mes valeurs et ainsi réduire au maximum l'impact carbone de mon activité. 🍀</p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="contact-item mb-10">
-            <span class="material-icons contact-item-icon">location_on</span>
-            <p class="sm-txt no-margin no-padding">Bordeaux Métropole</p>
-          </div>
-
-          <div class="contact-item mb-10">
-            <span class="material-icons contact-item-icon">phone</span>
-            <p class="sm-txt no-margin no-padding">+33 6 98 89 48 77</p>
-          </div>
-
-          <div class="contact-item mb-10">
-            <span class="material-icons contact-item-icon">email</span>
-            <a class="sm-txt no-margin no-padding" href="mailto:petipa.eco@gmail.com">petipa.eco@gmail.com</a>
-          </div>
         </section>
 
         <!-- ++++++++++++++++++++ PETIPA FOOTER ++++++++++++++++++++ -->

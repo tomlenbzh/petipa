@@ -17,6 +17,42 @@
   transition: all ease-in-out 0.5s;
 }
 
+.social-network-card {
+  width: 350px;
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+  background: linear-gradient(90deg, rgba(182, 215, 181, 1) 0%, rgba(224, 238, 224, 1) 23%, rgba(255, 255, 255, 1) 100% );
+}
+
+.card-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cf7aa0;
+  font-weight: bold;
+  font-size: small;
+}
+
+.emoji {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.card-content {
+  line-height: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .social-network-card {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .contact-item-txt {
     font-size: small;

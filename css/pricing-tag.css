@@ -2,6 +2,7 @@
   text-align: center;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  height: 100%;
 }
 
 .price-tag-title {
@@ -30,13 +31,11 @@
 
 .price-tag-amount {
   font-size: 45px;
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .price-tag-period {
   margin: 0;
   font-size: large;
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .price-tag-details {

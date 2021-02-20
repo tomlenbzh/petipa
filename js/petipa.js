@@ -3,6 +3,7 @@ const projectSection = document.getElementById('project');
 const aboutMeSection = document.getElementById('aboutMe');
 const ourFeesSection = document.getElementById('ourFees');
 const sourcesSection = document.getElementById('sources');
+const pendingSection = document.getElementById('pending');
 const testimoniesSection = document.getElementById('testimonies');
 const contactMeSection = document.getElementById('contactMe');
 const dropdownContainer = document.getElementById('dropdown-container');
@@ -42,6 +43,14 @@ function navigateToOurFees(closeMenu) {
 function navigateToSources(closeMenu) {
   zenscroll.setup(500, 150);
   zenscroll.to(sourcesSection);
+  if (closeMenu) {
+    toggleMenu();
+  }
+}
+
+function navigateToPending(closeMenu) {
+  zenscroll.setup(500, 150);
+  zenscroll.to(pendingSection);
   if (closeMenu) {
     toggleMenu();
   }
