@@ -19,7 +19,6 @@
 
 .social-network-card {
   width: 350px;
-  font-size: small;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -34,7 +33,7 @@
   justify-content: center;
   color: #cf7aa0;
   font-weight: bold;
-  font-size: small;
+  margin-bottom: 10px;
 }
 
 .emoji {
