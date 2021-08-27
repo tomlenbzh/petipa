@@ -71,10 +71,10 @@
               <button class="lg-item-btn" onclick="navigateToOurFees(false)">Les tarifs</button>
             </li>
             <li class="lg-menu-list-item">
-              <button class="lg-item-btn" onclick="navigateToSources(false)">Sources / Inspirations</button>
+              <button class="lg-item-btn" onclick="navigateToPending(false)">En attendant</button>
             </li>
             <li class="lg-menu-list-item">
-              <button class="lg-item-btn" onclick="navigateToPending(false)">En attendant</button>
+              <button class="lg-item-btn" onclick="navigateToSources(false)">Sources / Inspirations</button>
             </li>
             <li class="lg-menu-list-item">
               <button class="lg-item-btn" onclick="navigateToTestimonies(false)">Témoignages</button>
@@ -105,8 +105,8 @@
           <div class="dropdown-item" onclick="navigateToProject(true)">Le projet</div>
           <div class="dropdown-item" onclick="navigateToAboutMe(true)">Qui suis-je ?</div>
           <div class="dropdown-item" onclick="navigateToOurFees(true)">Les tarifs</div>
-          <div class="dropdown-item" onclick="navigateToSources(true)">Sources / Inspirations</div>
           <div class="dropdown-item" onclick="navigateToPending(true)">En attendant</div>
+          <div class="dropdown-item" onclick="navigateToSources(true)">Sources / Inspirations</div>
           <div class="dropdown-item" onclick="navigateToTestimonies(true)">Témoignages</div>
           <div class="dropdown-item" onclick="navigateToContactMe(true)">Me contacter</div>
         </div>
@@ -172,6 +172,8 @@
             <div class="section-content">
               <div class="about-content">
 
+                <img src="./assets/images/profile/coralie.jpg" alt="Coralie Carminati" class="about-img">
+
                 <div class="about-txt">
                   <p>J’ai toujours été proche de la nature, respectueuse du vivant sous toutes ses formes (je fais une
                     exception pour les moustiques je le confesse), sensible au bien manger et au bien-être. Mais mon
@@ -192,11 +194,6 @@
                     colère, de l’espoir, des doutes, des lectures, des conférences, des ateliers, des formations, une
                     transition professionnelle, un changement de vie… beaucoup d’encouragement et de bons conseils, est
                     né <strong>PetiPa & Co.</strong></p>
-                </div>
-  
-                <div class="about-img"></div>
-                <div class="about-img-sm-container">
-                  <img src="./assets/images/profile/coralie.jpg" alt="Coralie Carminati" class="about-img-sm">
                 </div>
   
               </div>
@@ -227,9 +224,9 @@
         <section id="ourFees" class="site-section txt-j">
           <h2 class="section-title mt-50">Les tarifs</h2>
           <div class="section-content">
-            <p class="prices"><strong>Premier RDV (2 à 3h)</strong> à domicile = 45€<strong>*</strong></p>
-            <p class="prices"><strong>Accompagnement sur 3 mois</strong> = 80€ par mois</p>
-            <p class="prices"><strong>Bilan final (1h)</strong> = inclus</p>
+            <p class="prices text-center"><strong>Premier RDV (2 à 3h)</strong> à domicile = 45€<strong>*</strong></p>
+            <p class="prices text-center"><strong>Accompagnement sur 3 mois</strong> = 80€ par mois</p>
+            <p class="prices text-center"><strong>Bilan final (1h)</strong> = inclus</p>
             <p class="prices">Si vous avez envie d’offrir le premier RDV à des proches, je peux vous envoyer un «
               bon cadeau ». Sachez qu’il n’y a aucune obligation de poursuivre si le premier RDV n’est pas concluant et
               que les personnes ne sont pas prêtes à aller plus loin dans la démarche. Mais la graine sera plantée et
@@ -270,11 +267,45 @@
 
           </div>
 
-          <p class="mt-30"><strong>* </strong>Prix de lancement pour tout premier RDV pris <strong>avant le 30 
-            Juin 2021</strong>.</p>
-          <p><strong>** </strong>L’atelier inclus la matière première et le matériel pour réaliser <strong>
+          <p class="mt-30"><strong>*</strong> L’atelier inclus la matière première et le matériel pour réaliser <strong>
             au choix 2 déodorants ou 8 savons ou 2 baumes à lèvres ou 2 bougies</strong>.</p>
 
+        </section>
+
+        <!-- ++++++++++++++++++++ PETIPA PENDING SECTION ++++++++++++++++++++ -->
+
+        <section id="pending" class="site-section txt-j">
+          <h2 class="section-title mt-50">En attendant</h2>
+          <div class="section-content">
+          
+            <div>
+              <p class="mb-50 text-center">
+                Je vous propose quelques outils intéressants, testés et approuvés, qui vous aideront à mieux comprendre et à motiver vos actions.
+              </p>
+              <p>
+                <strong class="italic-title">Vous vous demandez quel est votre impact carbone ?</strong>
+              </p>
+              <p>Ce simulateur pourra vous donner une petite idée en vous aidant à calculer votre bilan carbone.</p>  
+            </div>
+
+            <script id="ecolab-climat" src="https://nosgestesclimat.fr/iframe.js"></script>
+
+            <div class="mt-50">
+              <p><strong class="italic-title">La notion de CO² est un peu floue?</strong></p>
+              <p>Ce super convertisseur vous permettra d’y voir plus clair:<br>
+                <a href="https://monconvertisseurco2.fr/" target="_blank">https://monconvertisseurco2.fr/</a>
+              </p>
+            </div>
+
+            <div class="mt-30">
+              <p><strong class="italic-title">Vous vous demandez si les fruits et légumes que vous mangez sont vraiment de saison ?</strong></p>
+              <p>
+                Ce calculateur est fait pour vous:<br>
+                <a href="https://mesfruitsetlegumesdesaison.fr/" target="_blank">https://mesfruitsetlegumesdesaison.fr/</a>
+              </p>
+            </div>
+
+          </div>
         </section>
 
         <!-- ++++++++++++++++++++ PETIPA SOURCES SECTION ++++++++++++++++++++ -->
@@ -352,7 +383,7 @@
             </div>
 
             <div class="link-item">
-              <p class="link-item-label"><strong>FRESQUE DU CLIMAT :</strong></p>
+              <p class="link-item-label"><strong>Fresque du climat :</strong></p>
               <p class="link-item-content">
                 <a href="http://www.fresqueduclimat.org" target="_blank">www.fresqueduclimat.org</a>
               </p>
@@ -385,43 +416,6 @@
             <span class="pink">*</span>Liste non exhaustive
           </div>
 
-        </section>
-
-        <!-- ++++++++++++++++++++ PETIPA TESTIMONIES SECTION ++++++++++++++++++++ -->
-
-        <section id="pending" class="site-section txt-j">
-          <h2 class="section-title mt-50">En attendant</h2>
-          <div class="section-content">
-          
-            <div>
-              <p class="mb-50 text-center">
-                Je vous propose quelques outils intéressants, testés et approuvés, qui vous aideront à mieux comprendre et à motiver vos actions.
-              </p>
-              <p>
-                <strong class="italic-title">Vous vous demandez quel est votre impact carbone ?</strong>
-              </p>
-              <p>Ce simulateur pourra vous donner une petite idée en vous aidant à calculer votre bilan carbone.</p>  
-            </div>
-
-            <script id="ecolab-climat" src="https://nosgestesclimat.fr/iframe.js"></script>
-
-            <div class="mt-50">
-              <p><strong class="italic-title">La notion de CO² est un peu floue?</strong></p>
-              <p>Ce super convertisseur vous permettra d’y voir plus clair:<br>
-                <a href="https://monconvertisseurco2.fr/" target="_blank">https://monconvertisseurco2.fr/</a>
-              </p>
-            </div>
-
-            <div class="mt-30">
-              <p><strong class="italic-title">Vous vous demandez si les fruits et légumes que vous mangez sont vraiment de saison ?</strong></p>
-              <p>
-                Ce calculateur est fait pour vous:<br>
-                <a href="https://mesfruitsetlegumesdesaison.fr/" target="_blank">https://mesfruitsetlegumesdesaison.fr/</a>
-              </p>
-            </div>
-
-  
-          </div>
         </section>
 
         <!-- ++++++++++++++++++++ PETIPA TESTIMONIES SECTION ++++++++++++++++++++ -->
@@ -541,10 +535,7 @@
 
             <div class="social-network-info d-flex flex-column">
               <div class="social-network-card">
-                <p class="card-title">
-                  <span>Ne me cherchez pas, vous ne me trouverez pas</span>
-                  <img src="./assets/images/logos/emoji.png" class="emoji" alt="Ne me cherchez pas, vous ne me trouverez pas">
-                </p>
+                <p class="card-title">Ne me cherchez pas, vous ne me trouverez pas</p>
                 <p class="card-content">
                   J'ai fait le choix de ne pas communiquer sur les réseaux sociaux pour rester fidèle 
                   à mes valeurs et ainsi réduire au maximum l'impact carbone de mon activité. 🍀</p>
